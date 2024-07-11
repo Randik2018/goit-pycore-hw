@@ -4,7 +4,7 @@ def get_upcoming_birthdays(users):
     today = datetime.today().date()
     
     upcoming_birthdays = []
-
+ 
     for user in users:
         birthday = datetime.strptime(user["birthday"], "%Y.%m.%d").date()
         birthday_this_year = birthday.replace(year=today.year)
